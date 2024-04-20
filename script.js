@@ -1,6 +1,8 @@
 const player = document.querySelector('.player');
 const spikes = document.querySelector('.spikes');
 const clouds = document.querySelector('.clouds');
+const gameOver = document.querySelector('.game-over');
+const btRestart = document.getElementById('bt-restart');
 
 const jump = () => {
     player.classList.add('jump');
@@ -26,8 +28,14 @@ const gameLoop = setInterval(() => {
         clouds.style.left = `${cloudsPosition}px`;
         clouds.style.animation = 'none';
 
+        gameOver.style.display = 'flex';
+
         clearInterval(gameLoop);
     }
-}, 10)
+}, 10);
+
+btRestart.addEventListener('click', () => {
+    window.location.reload(true)
+});
 
 document.addEventListener('keydown', jump);
