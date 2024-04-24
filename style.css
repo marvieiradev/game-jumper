@@ -31,7 +31,7 @@
 }
 
 .jump {
-    animation: jump 500ms ease-out;
+    animation: jump 500ms ease-in-out;
 }
 
 .clouds {
@@ -79,6 +79,20 @@ button {
     font-family: "Pixelify Sans", sans-serif;
     font-size: 20px;
     color: #fff;
+}
+
+.score {
+    font-size: 40px;
+    position: absolute;
+    right: 15px;
+    color: #000000;
+}
+
+.hi-score {
+    font-size: 40px;
+    position: absolute;
+    right: 200px;
+    color: #555555;
 }
 
 button:hover {
