@@ -11,3 +11,5 @@ Para jogar, basta apertar qualquer tecla para fazer o personagem pular. Evite os
 ## Informações
 
 Projeto desenvolvido utilizando apenas HTML, CSS e JavaScript.
+
+<img src="screenshot.png"/>
